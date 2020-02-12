@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="utf-8">
   <title>Contact Us | Liion</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -39,6 +40,18 @@
   transform: scale(1.5); 
 }
 </style>
+<script>
+	function myMap() {
+	var mapProp= {
+	  center:new google.maps.LatLng(51.508742,-0.120850),
+	  zoom:5,
+	};
+	var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+	}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
 </head>
 
 <body>
@@ -86,39 +99,45 @@
       <div class="container">
 
         <header class="section-header">
-          <h3 style="text-align: left;"><b>Contact Us</b></h3>
-          <h4>Get in touch with us for any queries</h4>
-          <p>
-            The club brought together 40 like-minded students from different streams with the motivation 
-            of bringing out new technologies and research in the field of EVs, harnessing and storing 
-            the green form of energies.
-          </p>
+			<h2 style="text-align: left;"><b>Contact Us</b></h2>
+			<h4>Get in touch with us for any queries</h4>
+			<br><br>
+			<div class="row">
+				<div class="col-md-6 fadeInUp" data-wow-delay="0.2s">
+				    <h2 class="title"><a href="#">General Information</a></h2>
+				    <h5><b>Address</b></h5>
+				    <p style="text-align: left;">
+						<font style="font-size: 24px">
+						Liion Club<br>
+						IIT Dharwad,<br>
+						Belur Industrial Area<br>
+						Dharwad - 580011, INDIA
+						</font>
+						<h5><b>Phone</b></h5>
+						<font style="text-align: left; font-size: 24px">
+							Chief Marketing: +91-8291736305
+							<br>Chief Operation: +91-9589221808
+							<br>Chief Mechanical: +91-9820846478
+							<br>Chief Electrical: +91-8805597800
+						</font>
+						<br><br>
+						<h5><b>Email</b></h5>
+						<font style="font-size: 24px">
+							randomshit@iitdh.ac.in<br>
+							randomshit2@iitdh.ac.in
+						</font>
+				    </p>
+				</div>
+
+				<div class="col-md-6 fadeInUp" data-wow-delay="0.2s">
+				    <h2 class="title"><a href="#">Our Location</a></h2>
+					  <div class="mapouter" style="text-align: left;"><div class="gmap_canvas"><iframe width="800" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=IIT%20Dharwad&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div>
+						</div>
+			    </div>
+			</div>
         </header>
 
-        <div class="row">
 
-          <div class="col-md-6 fadeInUp">
-              <p>
-                increase font here
-                points mei daalana hai
-                <ul>
-                  <li>TO harness</li>
-                </ul>
-                To harness and store renewable sources of energy, developing storing devices and 
-                working on EVs.
-              </p>
-          </div>
-
-
-          <div class="col-md-6 fadeInUp" data-wow-delay="0.2s">
-              <h2 class="title"><a href="#">Our Vision</a></h2>
-              <p>
-                To electirfy Indian public transportation. Developing Cheaper storage units
-                for renewable energy. To incorporate renewable energy in daily energy requirement.
-              </p>
-        </div>
-
-      </div>
     </section><!-- #about -->
 
 
